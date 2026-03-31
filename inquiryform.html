@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Page</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--==css== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Marcellus&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .inquiry-section {
+            padding: 80px 0;
+        }
+
+        .inquiry-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .inquiry-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #14532d;
+        }
+
+        .btn-inquiry {
+            background: #14532d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ===topbar start=== -->
+
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-lg-6 col-md-6 d-flex flex-wrap gap-4 text-white">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="roboto">+91 99794 17549</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="roboto">info@globientstar.in</span>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6 col-md-6 text-md-end text-start mt-2 mt-md-0 text-white">
+
+                    <i class="fa-brands fa-twitter me-3 icone align-items-center"></i>
+                    <i class="fa-brands fa-facebook me-3 icone"></i>
+                    <i class="fa-brands fa-instagram icone"></i>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===topbar end=== -->
+
+    <!-- ===navbar start=== -->
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" width="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./contact.html">Contect Us</a>
+                    </li>
+                </ul>
+                <button class="nav-btn text-white roboto fw-bold py-2 px-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Get a Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4">
+
+      <!-- Close button -->
+      <div class="text-end">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Logo -->
+      <div class="text-center mb-3">
+        <img src="./img/logo.png" width="40">
+      </div>
+
+      <!-- Title -->
+      <h4 class="text-center fw-bold">Welcome</h4>
+      <p class="text-center text-muted">
+        Please sign in or create an account
+      </p>
+
+      <!-- Google button -->
+      <button class="btn btn-light border w-100 mb-3">
+        Continue with Google
+      </button>
+
+      <p class="text-center">or</p>
+
+      <!-- Email input -->
+                <input type="email" id="email" class="form-control mb-3" placeholder="Enter email address">
+
+                <!-- Continue button -->
+                <button class="btn btn-dark w-100 mb-3" onclick="loginUser()">Continue</button>
+
+      <!-- Footer -->
+      <p class="text-center small">
+        Already have an account? <a href="#">Sign in</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+    <!-- ===navbar end=== -->
+
+    <section class="breadcrumb-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="breadcrumb-box d-flex flex-wrap align-items-center">
+
+                        <span class="breadcrumb-title">Products</span>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="./product.html">Products</a></li>
+                                <li class="breadcrumb-item">Dehydrated product</li>
+                            </ol>
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="inquiry-section">
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="inquiry-box">
+
+                        <h2 class="text-center inquiry-title">Product Inquiry</h2>
+                        <p class="text-center mb-4">Send us your import export inquiry</p>
+
+                        <form action="https://formsubmit.co/sawaliyadhwani@gmail.com" method="POST">
+
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/inquirysubmit.html">
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+                                    <label class="form-label fs-5">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label class="form-label fs-5">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter email" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label class="form-label fs-5">Phone</label>
+                                    <input type="text" class="form-control" placeholder="Phone number">
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <label class="form-label fs-5">Company Name</label>
+                                    <input type="text" class="form-control" placeholder="Company name">
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <label class="form-label fs-5">Product Inquiry</label>
+                                    <input type="text" class="form-control" placeholder="Product name">
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <label class="form-label fs-5">Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="Write your inquiry"></textarea>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn-inquiry">Send Inquiry</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+ <footer>
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo-bg">
+                    <img src="./img/logo.png" alt="Logo" width="120">
+                </div>
+                <h6 class="footer-heading">About DHV Industries</h6>
+                <p class="small text-white roboto" style="line-height: 1.6;">
+                    The vision of growth has been tall since DHV Industries Pvt. Ltd. The organization proclaimed it with their sprightly transaction in import and export. Established in the heart of Gujarat.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Our Product</h6>
+                <ul class="footer-links">
+                    <li><a href="./product.html">Oil Seeds</a></li>
+                    <li><a href="./product2.html">Indian Spices</a></li>
+                    <li><a href="./product.html">Grains and Pulses</a></li>
+                    <li><a href="./product.html">Dehydrated Products</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="#">Certificate</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Brochure</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 text-center text-md-start">
+                <h6 class="footer-heading">Location</h6>
+                <iframe src="https://www.google.com/maps?q=Berlin&output=embed"  alt="Location Map" class="map-img"></iframe>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-heading">Contacts Us</h6>
+                
+                <div class="contact-item">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p><strong>Phone</strong></p>
+                        <p>+91 99794 17549</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-text">
+                        <p><strong>Address</strong></p>
+                        <p>Ahmedabad Gujarat India,382350</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text">
+                        <p><strong>Email</strong></p>
+                        <p>info@globientstar.in</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            <div>
+                © 2025 © 2025 © Copyright DHV Brother's
+            </div>
+            <div>
+                <a href="#">Privacy Policy</a> | <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- ===footer end=== -->
+
+</body>
+
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- web link  -->
+    <!-- https://www.figma.com/design/ZhrMJSmFXjRS36lk3nhjqE/Untitled?node-id=1-3721&t=mZ2DLpVKiasYKYWJ-0 -->
+
+    <!--==css== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Marcellus&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ===topbar start=== -->
+
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-lg-6 col-md-6 d-flex flex-wrap gap-4 text-white">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="roboto">+91 99794 17549</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="roboto">info@globientstar.in</span>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6 col-md-6 text-md-end text-start mt-2 mt-md-0 text-white">
+
+                    <i class="fa-brands fa-twitter me-3 icone align-items-center"></i>
+                    <i class="fa-brands fa-facebook me-3 icone"></i>
+                    <a href="https://instagram.com/globient_star_import_export" target="_blank" class="text-white">
+                        <i class="fa-brands fa-instagram icone"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===topbar end=== -->
+
+    <!-- ===navbar start=== -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" width="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./contact.html">Contect Us</a>
+                    </li>
+                </ul>
+                <button class="nav-btn text-white roboto fw-bold py-2 px-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Get a Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 rounded-4">
+
+                <!-- Close button -->
+                <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Logo -->
+                <div class="text-center mb-3">
+                    <img src="./img/logo.png" width="40">
+                </div>
+
+                <!-- Title -->
+                <h4 class="text-center fw-bold">Welcome</h4>
+                <p class="text-center text-muted">
+                    Please sign in or create an account
+                </p>
+
+                <!-- Google button -->
+                <button class="btn btn-light border w-100 mb-3">
+                    Continue with Google
+                </button>
+
+                <p class="text-center">or</p>
+
+                <!-- Email input -->
+                <input type="email" id="email" class="form-control mb-3" placeholder="Enter email address">
+
+                <!-- Continue button -->
+                <button class="btn btn-dark w-100 mb-3" onclick="loginUser()">Continue</button>
+
+                <!-- Footer -->
+                <p class="text-center small">
+                    Already have an account? <a href="#">Sign in</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- ===navbar end=== -->
+
+    <!-- ===main section start===  -->
+    <section class="main-section-bg py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT SIDE IMAGES -->
+                <div class="col-lg-7 text-center">
+
+                    <div class="row justify-content-center g-4">
+                        <div class="col-4 col-md-3">
+                            <img src="./img/image (3).png" class="img-fluid">
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="./img/image (4).png" class="img-fluid">
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="./img/image (5).png" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center g-4 mt-3">
+                        <div class="col-4 col-md-3">
+                            <img src="./img/image (6).png" class="img-fluid">
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="./img/image (7).png" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE TEXT -->
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="oil-box mx-3">
+                        <h1 class="oil-title mx-5 roboto">Oil Seeds</h1>
+                        <p class="oil-text mx-5 roboto">We provide the best quality products to our customers worldwide.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===main section end=== -->
+
+    <!-- ===product section start=== -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center roboto mt-5 heading">Our Products Category</h1>
+                <p class="text-center roboto mt-4 fs-5">Industries Private Limited is Manufacturers, Suppliers &
+                    Exporters of Oilseeds, Indian Spices, Grains/ Pulses and Dehydrated Products on a large scale Our
+                    products are exported across the globe and we have a firm presence in Asia, Far East, Middle East,
+                    Europe, North America, South America, North Africa etc. and continue to expand throughout the world
+                    by serving products of International standards.</p>
+                <hr class="mt-4">
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <a href="./product.html"><img src="./img/Group 1000012191 (1).png" alt="" class="img-fluid"
+                            style="cursor: pointer;"></a>
+                    <p class="text-center text-black fs-5 fw-bold mt-3">Oil Seeds</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <a href="./product.html"><img src="./img/Group 1000012192.png" alt="" class="img-fluid"
+                            style="cursor: pointer;"></a>
+                    <p class="text-center text-black fs-5 fw-bold mt-3">Indian Spices</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <a href="./product.html"><img src="./img/Group 1000012193 (2).png" alt="" class="img-fluid"
+                            style="cursor: pointer;"></a>
+                    <p class="text-center text-black fs-5 fw-bold mt-3">Grains & Pulses</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <a href="./product.html"><img src="./img/Group 1000012194 (1).png" alt="" class="img-fluid"
+                            style="cursor: pointer;"></a>
+                    <p class="text-center text-black fs-5 fw-bold mt-3">Dehydrated Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===product section end=== -->
+    <!-- ===why choose section start=== -->
+    <div class="main-section-bg mtop-100 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center roboto mt-5 heading">Why Choose Us</h1>
+                    <p class="text-center roboto mt-4 fs-5">Here is why we are different from Others</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 whychoose-section">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box1">
+                        <i class="fa-solid fa-award fs-1 p-3"></i>
+                        <h3 class="mx-3">Quality & Safety</h3>
+                        <p class="fs-5 pb-4 mt-3 mx-3 roboto">Maintain Stringment Product Quality Measures</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box1">
+                        <i class="fa-solid fa-file-circle-check fs-1 p-3"></i>
+                        <h3 class="mx-3">Standards</h3>
+                        <p class="fs-5 pb-4 mt-3 mx-3 roboto">Maintain Ethical Standards and Fair Business Policy</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box1">
+                        <i class="fa-solid fa-truck-fast fs-1 p-3"></i>
+                        <h3 class="mx-3">Fast & Safe Dispatch</h3>
+                        <p class="fs-5 pb-4 mt-3 mx-3 roboto">Get the products Delivery On time by maintaining farm
+                            quality</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box1">
+                        <i class="fa-solid fa-box-open fs-1 p-3"></i>
+                        <h3 class="mx-3">Variety of Product</h3>
+                        <p class="fs-5 pb-4 mt-3 mx-3 roboto">A Comprehensive rangr of seed <br> products</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box1">
+                        <i class="fa-solid fa-handshake-angle fs-1 p-3"></i>
+                        <h3 class="mx-3">Customer Relationship</h3>
+                        <p class="fs-5 pb-4 mt-3 mx-3 roboto">Belive in sustainable & long-team Relationship</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-5">
+                    <div class="box1">
+                        <i class="fa-solid fa-sack-dollar fs-1 p-3"></i>
+                        <h3 class="mx-3">Reasonable Prices</h3>
+                        <p class="fs-5 pb-4 mt-3 mx-3 roboto">Follow client-Centric approach with Reasonable Prices</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ===why choose section start=== -->
+
+    <!-- ===our process section start=== -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center roboto mt-5 heading">Our Process</h1>
+            </div>
+        </div>
+    </div>
+
+    <section class="ourprocess-section mt-5 mtop-50">
+        <div class="container">
+
+            <div class="row text-center g-4">
+
+                <!-- Item 1 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <i class="fa-solid fa-leaf p-3"></i>
+                    <h5 class="mt-3 roboto">Quality Raw Materials</h5>
+                    <p class="roboto">
+                        Thoroughly inspected raw materials of the best quality are procured from best farmers
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <i class="fa-solid fa-handshake-slash p-3"></i>
+                    <h5 class="mt-3 roboto">Zero Human Contact Technology</h5>
+                    <p class="roboto">
+                        Our advance sortex and cleaning process use no human touch method to make directly eatable
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <i class="fa-solid fa-file-lines p-3"></i>
+                    <h5 class="mt-3 roboto">Quality Check</h5>
+                    <p class="roboto">
+                        After process testing material for every consignment to deliver best quality
+                    </p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <i class="fa-solid fa-truck-fast p-3"></i>
+                    <h5 class="mt-3 roboto">Packaging and Delivery</h5>
+                    <p class="roboto">
+                        Our packaging prevents any type of material damage and ensures safe delivery
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===our process section end=== -->
+
+    <!-- ===our strength section start=== -->
+    <div class="container mtop-100">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center roboto mt-5 heading">Our Strength</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="process-slider py-5 mt-5">
+
+        <div class="container">
+
+            <div class="owl-carousel process-carousel">
+
+                <div class="item text-center">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <p class="mt-3 text-black fs-6">
+                        Complete Traceability Maintenance of Each Lot.
+                    </p>
+                </div>
+
+                <div class="item text-center">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <p class="mt-3 text-black fs-6">
+                        Well maintained organic standard approved processing facility.
+                    </p>
+                </div>
+
+                <div class="item text-center">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <p class="mt-3 text-black fs-6">
+                        Working with valued certifiers likes SGS, Intertek, Eco Cert
+                    </p>
+                </div>
+
+                <div class="item text-center">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <p class="mt-3 text-black fs-6">
+                        Fast and safe delivery worldwide
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===our strength section end=== -->
+
+    <!-- ===best selling products start=== -->
+
+    <div class="container mtop-100">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center roboto mt-5 heading">Best Selling Products</h1>
+                <hr class="mt-4">
+            </div>
+        </div>
+    </div>
+
+    <section class="product-slider py-5">
+
+        <div class="container">
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/unsplash_Bi8yaj053S4.png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Chickpeas</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Mask group (13).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Cumin-Seeds</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Mask group (14).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Fenugreek-Seeds</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/unsplash_TKV0hPP5YNw.png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Coriander-Seeds</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/unsplash_Bi8yaj053S4.png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Chickpeas</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Mask group (13).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Cumin-Seeds</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Mask group (14).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Fenugreek-Seeds</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/unsplash_TKV0hPP5YNw.png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Coriander-Seeds</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===best selling products end=== -->
+    <!-- ===footer strat === -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo-bg">
+                        <img src="./img/logo.png" alt="Logo" width="120">
+                    </div>
+                    <h6 class="footer-heading">About DHV Industries</h6>
+                    <p class="small text-white roboto" style="line-height: 1.6;">
+                        The vision of growth has been tall since DHV Industries Pvt. Ltd. The organization proclaimed it
+                        with their sprightly transaction in import and export. Established in the heart of Gujarat.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Our Product</h6>
+                <ul class="footer-links">
+                    <li><a href="./product.html">Oil Seeds</a></li>
+                    <li><a href="./product2.html">Indian Spices</a></li>
+                    <li><a href="./product.html">Grains and Pulses</a></li>
+                    <li><a href="./product.html">Dehydrated Products</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="#">Certificate</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Brochure</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+                <div class="col-lg-2 col-md-6 text-center text-md-start">
+                    <h6 class="footer-heading">Location</h6>
+                    <iframe src="https://www.google.com/maps?q=Berlin&output=embed" alt="Location Map"
+                        class="map-img"></iframe>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-heading">Contacts Us</h6>
+
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p><strong>Phone</strong></p>
+                            <p>+91 99794 17549</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <p><strong>Address</strong></p>
+                            <p>Ahmedabad Gujarat India,382350</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <p><strong>Email</strong></p>
+                            <p>info@globientstar.in</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright-bar">
+                <div>
+                    © 2025 © 2025 © Copyright DHV Brother's
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a> | <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===footer end=== -->
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        $('.process-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+
+        })
+    </script>
+
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            speed: 3000,
+
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            },
+
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 }
+            }
+
+        });
+
+    </script>
+
+    <script>
+        function loginUser() {
+            let email = document.getElementById("email").value;
+
+            if (email === "") {
+                alert("Please enter email");
+            } else {
+                alert("Login Successful ✅");
+
+                let modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                modal.hide();
+            }
+        }
+    </script>
+</body>
+
+</html>

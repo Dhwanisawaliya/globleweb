@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--==css== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Marcellus&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    .spice-section {
+        background-color: #066337;
+        padding: 60px 0;
+    }
+
+    .carousel-container {
+        background-color: white;
+        padding: 40px 20px;
+        position: relative;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        background-color: #5fa33333;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        margin: 0 10px;
+    }
+
+    /* Styling the arrow icons */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        color: green;
+        width: 20px;
+        height: 20px;
+    }
+
+    .spice-img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<body>
+
+    <!-- ===topbar start=== -->
+
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-lg-6 col-md-6 d-flex flex-wrap gap-4 text-white">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="roboto">+91 99794 17549</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="roboto">info@globientstar.in</span>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6 col-md-6 text-md-end text-start mt-2 mt-md-0 text-white">
+
+                    <i class="fa-brands fa-twitter me-3 icone align-items-center"></i>
+                    <i class="fa-brands fa-facebook me-3 icone"></i>
+                    <i class="fa-brands fa-instagram icone"></i>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===topbar end=== -->
+
+    <!-- ===navbar start=== -->
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" width="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./contact.html">Contect Us</a>
+                    </li>
+                </ul>
+                <button class="nav-btn text-white roboto fw-bold py-2 px-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Get a Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 rounded-4">
+
+                <!-- Close button -->
+                <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Logo -->
+                <div class="text-center mb-3">
+                    <img src="./img/logo.png" width="40">
+                </div>
+
+                <!-- Title -->
+                <h4 class="text-center fw-bold">Welcome</h4>
+                <p class="text-center text-muted">
+                    Please sign in or create an account
+                </p>
+
+                <!-- Google button -->
+                <button class="btn btn-light border w-100 mb-3">
+                    Continue with Google
+                </button>
+
+                <p class="text-center">or</p>
+
+                <!-- Email input -->
+                <input type="email" id="email" class="form-control mb-3" placeholder="Enter email address">
+
+                <!-- Continue button -->
+                <button class="btn btn-dark w-100 mb-3" onclick="loginUser()">Continue</button>
+
+                <!-- Footer -->
+                <p class="text-center small">
+                    Already have an account? <a href="#">Sign in</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===navbar end=== -->
+
+    <div class="container about-bg mt-5">
+        <div class="row">
+            <div class="col">
+                <h3>About Us</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="spice-section mt-5">
+        <div class="container">
+            <div class="carousel-container shadow">
+
+                <div id="spiceCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row text-center">
+                                <div class="col-4 col-md-2 offset-md-1">
+                                    <img src="./img/bgremove5.png" class="spice-img" alt="Black Pepper">
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <img src="./img/bgremove4.png" class="spice-img" alt="Dried Herbs">
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <img src="./img/bgremove3.png" class="spice-img" alt="Chili Powder">
+                                </div>
+                                <div class="col-6 col-md-2 d-none d-md-block">
+                                    <img src="./img/bgremove2.png" class="spice-img" alt="Cumin">
+                                </div>
+                                <div class="col-6 col-md-2 d-none d-md-block">
+                                    <img src="./img/bgremove1.png" class="spice-img" alt="Mixed Spices">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row text-center">
+                                <div class="col-4 col-md-2 offset-md-1">
+                                    <img src="./img/bgremove5.png" class="spice-img" alt="Black Pepper">
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <img src="./img/bgremove4.png" class="spice-img" alt="Dried Herbs">
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <img src="./img/bgremove3.png" class="spice-img" alt="Chili Powder">
+                                </div>
+                                <div class="col-6 col-md-2 d-none d-md-block">
+                                    <img src="./img/bgremove2.png" class="spice-img" alt="Cumin">
+                                </div>
+                                <div class="col-6 col-md-2 d-none d-md-block">
+                                    <img src="./img/bgremove1.png" class="spice-img" alt="Mixed Spices">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#spiceCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#spiceCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===our story start== -->
+
+    <div class="container mtop-100">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center roboto mt-5 heading">Our Story & Mission</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ourstory-section mt-4">
+        <div class="row">
+            <div class="col">
+                <h3>Our Foundation and Global Vision</h3>
+                <p class="fs-5 mt-4 ">Established with a clear vision to become a trusted, world-class supplier of
+                    agricultural commodities,span <b>DVH Brother’s</b> is a respected name in the global agri-trade
+                    sector. Our journey is rooted in a deep understanding of the market and an unwavering commitment to
+                    quality and ethical sourcing.</p>
+                <p class="mt-3 fs-5">We are proud manufacturers, suppliers, and exporters of a comprehensive and
+                    versatile product portfolio, specializing in four key categories: Oil Seeds, Indian Spices, Grains &
+                    Pulses, and Dehydrated Products.</p>
+                <p class="fs-5"><b>Our Mission:</b> To provide the best quality agri-products to our customers worldwide
+                    while upholding the highest standards of ethics, sustainability, and food safety.</p>
+                <p class="fs-5"><b>Our Reach:</b> We operate on a large scale, with our products successfully exported
+                    across the globe. We have a strong firm presence in key international markets including Asia, Far
+                    East, Middle East, Europe, North America, South America, and Africa. We are dedicated to bridging
+                    the world by delivering essential and natural ingredients.</p>
+                <h4 class="mt-4">Our Commitment to Quality and Safety</h4>
+                <p class="fs-5 ">We believe that quality is the foundation of our long-term success. Our processes are
+                    designed to ensure every product batch meetsstringent international standards.</p>
+                <p class="fs-5"><b>1. Quality Raw Materials: </b>We source our raw materials exclusively from trusted
+                    and identified farming communities. This ensures</p>
+                <p class="fs-5"><b>2. Certified Processing:</b> We utilize a well-maintained, organic standard approved
+                    processing facility. Our strength lies in the complete traceability and maintenance of each lot.</p>
+                <p class="fs-5"><b>3. Zero Human Contact Technology:</b> We employ advanced, automated, and mechanized
+                    processes for cleaning, sorting, and grading to maintain purity and minimize contamination.</p>
+                <p class="fs-5"><b>4. Strict Quality Checks:</b> Every product undergoes rigorous quality checks—testing
+                    for purity, contamination, and moisture—before it is cleared for packaging.</p>
+                <p class="fs-5"><b>5. Safe Packaging & Dispatch:</b> We ensure robust and safe packaging with customized
+                    options. Our robust logistics network guarantees timely and safe dispatch right to the customer's
+                    port.</p>
+                <h4>Why Partner with Us?</h4>
+                <p class="fs-5">Our customers choose us because we offer a unique combination of ethical practices,
+                    reliability, and excellent products.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="feature-container p-5">
+            <div class="row feature-header d-md-flex">
+                <div class="col-md-4 fs-5"><b>Feature</b></div>
+                <div class="col-md-8 fs-5"><b>Description</b></div>
+            </div>
+
+            <div class="row feature-row mt-3">
+                <div class="col-md-4 feature-name fs-5"><b>Product Variety</b></div>
+                <div class="col-md-8 fs-6 feature-description">
+                    We offer a comprehensive alternative range of Oil Seeds, Spices, Grains/Pulses, and Dehydrated
+                    Products—a true one-stop solution for all your agri-commodity needs.
+                </div>
+            </div>
+
+            <div class="row feature-row mt-3">
+                <div class="col-md-4 feature-name fs-5"><b>Ethical Standards</b></div>
+                <div class="col-md-8 feature-description">
+                    We maintain ethical standards and follow a transparent work environment with our partners and
+                    suppliers.
+                </div>
+            </div>
+
+            <div class="row feature-row mt-3">
+                <div class="col-md-4 feature-name fs-5"><b>Customer Relationship</b></div>
+                <div class="col-md-8 feature-description">
+                    We focus on building a sustainable & long-term relationship based on mutual trust and respect.
+                </div>
+            </div>
+
+            <div class="row feature-row mt-3">
+                <div class="col-md-4 feature-name fs-5"><b>Certifications</b></div>
+                <div class="col-md-8 feature-description">
+                    We proudly work with certified bodies and trade organizations like <strong>SGS, Intertek, and Eco
+                        Cert</strong>, ensuring global compliance and trust.
+                </div>
+            </div>
+
+            <div class="row feature-row mt-3">
+                <div class="col-md-4 feature-name fs-5"><b>Reasonable Prices</b></div>
+                <div class="col-md-8 feature-description">
+                    We follow a competitive pricing approach with a focus on delivering the highest value for your
+                    investment.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===our story end=== -->
+    <!-- button  -->
+    <div class="container btn-section mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <button class="p-2"><a href="./contact.html" style="text-decoration: none;color: white;">Yes, I Am
+                        Intrested</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- ===footer strat === -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo-bg">
+                        <img src="./img/logo.png" alt="Logo" width="120">
+                    </div>
+                    <h6 class="footer-heading">About DHV Industries</h6>
+                    <p class="small text-white roboto" style="line-height: 1.6;">
+                        The vision of growth has been tall since DHV Industries Pvt. Ltd. The organization proclaimed it
+                        with their sprightly transaction in import and export. Established in the heart of Gujarat.
+                    </p>
+                </div>
+
+               <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Our Product</h6>
+                <ul class="footer-links">
+                    <li><a href="./product.html">Oil Seeds</a></li>
+                    <li><a href="./product2.html">Indian Spices</a></li>
+                    <li><a href="./product.html">Grains and Pulses</a></li>
+                    <li><a href="./product.html">Dehydrated Products</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="#">Certificate</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Brochure</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+                <div class="col-lg-2 col-md-6 text-center text-md-start">
+                    <h6 class="footer-heading">Location</h6>
+                    <iframe src="https://www.google.com/maps?q=Berlin&output=embed" alt="Location Map"
+                        class="map-img"></iframe>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-heading">Contacts Us</h6>
+
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p><strong>Phone</strong></p>
+                            <p>+91 99794 17549</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <p><strong>Address</strong></p>
+                            <p>Ahmedabad Gujarat India,382350</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <p><strong>Email</strong></p>
+                            <p>info@globientstar.in</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright-bar">
+                <div>
+                    © 2025 © 2025 © Copyright DHV Brother's
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a> | <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===footer end=== -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        $('.process-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+
+        })
+    </script>
+     <script>
+        function loginUser() {
+            let email = document.getElementById("email").value;
+
+            if (email === "") {
+                alert("Please enter email");
+            } else {
+                alert("Login Successful ✅");
+
+                let modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                modal.hide();
+            }
+        }
+    </script>
+</body>
+
+</html>

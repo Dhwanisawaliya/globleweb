@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--==css== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Marcellus&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ===topbar start=== -->
+
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-lg-6 col-md-6 d-flex flex-wrap gap-4 text-white">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="roboto">+91 99794 17549</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="roboto">info@globientstar.in</span>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6 col-md-6 text-md-end text-start mt-2 mt-md-0 text-white">
+
+                    <i class="fa-brands fa-twitter me-3 icone align-items-center"></i>
+                    <i class="fa-brands fa-facebook me-3 icone"></i>
+                    <i class="fa-brands fa-instagram icone"></i>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===topbar end=== -->
+
+    <!-- ===navbar start=== -->
+
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" width="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold roboto" href="./contact.html">Contect Us</a>
+                    </li>
+                </ul>
+                <button class="nav-btn text-white roboto fw-bold py-2 px-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Get a Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4">
+
+      <!-- Close button -->
+      <div class="text-end">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Logo -->
+      <div class="text-center mb-3">
+        <img src="./img/logo.png" width="40">
+      </div>
+
+      <!-- Title -->
+      <h4 class="text-center fw-bold">Welcome</h4>
+      <p class="text-center text-muted">
+        Please sign in or create an account
+      </p>
+
+      <!-- Google button -->
+      <button class="btn btn-light border w-100 mb-3">
+        Continue with Google
+      </button>
+
+      <p class="text-center">or</p>
+
+      <!-- Email input -->
+                <input type="email" id="email" class="form-control mb-3" placeholder="Enter email address">
+
+                <!-- Continue button -->
+                <button class="btn btn-dark w-100 mb-3" onclick="loginUser()">Continue</button>
+
+      <!-- Footer -->
+      <p class="text-center small">
+        Already have an account? <a href="#">Sign in</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+    <!-- ===navbar end=== -->
+
+
+    <section class="breadcrumb-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="breadcrumb-box d-flex flex-wrap align-items-center">
+
+                        <span class="breadcrumb-title">Products</span>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="./product.html">Products</a></li>
+                                <li class="breadcrumb-item">Dehydrated product</li>
+                                <li class="breadcrumb-item active" aria-current="page">Organic Onion powder</li>
+                            </ol>
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===product section start== -->
+
+    <section class="onion-section py-5">
+        <div class="container">
+
+            <div class="row align-items-start g-4">
+
+                <!-- Image -->
+                <div class="col-lg-4 col-md-5 col-12 text-center">
+                    <div class="onion-img-box">
+                        <img src="./img/Rectangle 34624331 (2).png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-8 col-md-7 col-12">
+
+                    <h2 class="onion-title">Premium Organic Onion powder</h2>
+
+                    <p class="roboto">
+                        Experience the purity and rich flavor of our <b>Premium White Onion Flakes</b> crafted using
+                        advanced dehydration technology to preserve natural taste, aroma, and quality.
+                        Each batch is produced in a <b>fully hygienic environment</b>, ensuring a clean, safe, and
+                        export-ready product.
+                    </p>
+
+                    <p class="roboto">
+                        Made from fresh onions, our flakes offer <b>bright white color, pure onion flavor, and excellent
+                            consistency</b>, making them ideal for a wide variety of food applications worldwide.
+                    </p>
+
+                    <button class="enquiry-btn"><a href="./inquiryform.html" style="text-decoration: none; color: white;">Send Enquiry</a></button>
+
+                </div>
+            </div>
+
+
+            <!-- Why choose section -->
+
+            <div class="row mt-5">
+
+                <div class="col-lg-12">
+
+                    <h3 class="mb-5">Why Choose Our Organic Onion powder?</h3>
+
+                    <ul class="check-list">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-check text-success mt-1 fs-4"></i>
+                            <h5 class="mx-2">Bright white Color</h5>
+                        </div>
+                        <p>Premium appearance suitable for high-quality blends and finished products.</p>
+                        
+                        <div class="d-flex">
+                            <i class="fa-solid fa-check text-success mt-1 fs-4"></i>
+                            <h5 class="mx-2">Fresh & Mild Aroma</h5>
+                        </div>
+                        <p>Naturally sweet onion fragrance without harsh or unpleasant notes.</p>
+                       
+                        <div class="d-flex">
+                            <i class="fa-solid fa-check text-success mt-1 fs-4"></i>
+                            <h5 class="mx-2">Rich, Pure Flavor</h5>
+                        </div>
+                        <p>Classic onion taste that enriches soups, seasonings, snacks, and ready-meals.</p>
+                      
+                        <div class="d-flex">
+                            <i class="fa-solid fa-check text-success mt-1 fs-4"></i>
+                            <h5 class="mx-2">Ultra-Clean Processing</h5>
+                        </div>
+                        <p>No foreign matter, no burnt bits — only clean and consistent flakes.</p>
+                        
+                        <div class="d-flex">
+                            <i class="fa-solid fa-check text-success mt-1 fs-4"></i>
+                            <h5 class="mx-2">Extended Shelf Life</h5>
+                        </div>
+                        <p>Low moisture levels ensure long-lasting freshness and safe storage.</p>
+                       
+                    </ul>
+
+                    <h5 class="mt-4">2. Packing & Loading</h5>
+
+                    <ul class="normal-list mt-3 mx-2">
+                        <li>14 kg net per poly bag</li>
+                        <li class="mt-2">20 ft FCL: 7 MT</li>
+                        <li class="mt-2">40 ft HQ FCL: 16 MT (+/- 10%)</li>
+                    </ul>
+
+                    <h5 class="mt-4">3. Microbiological Quality</h5>
+
+                    <ul class="normal-list mt-3 mx-2">
+                        <li>Low bacterial load</li>
+                        <li class="mt-2">Export-grade hygiene standards</li>
+                        <li class="mt-2">Extra clean processing</li>
+                    </ul>
+
+                    <h5 class="mt-4">4. Moisture Levels</h5>
+
+                    <ul class="normal-list mt-3 mx-2">
+                        <li>≤ 6.0% – Standard Grade</li>
+                        <li class="mt-2">≤ 3.3% – Toasted Grade</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container btn-section">
+    <div class="row">
+        <div class="col">
+            <button class="p-2 text-white"><a href="./contact.html" style="text-decoration: none; color: white;">Yes, I Am Intrested</a></button>
+        </div>
+    </div>
+ </div>
+    <!-- ===product section end== -->
+
+    <!-- ==best selling product start=== -->
+    <div class="container mtop-50">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center roboto mt-5 heading">Related PRODUCTS</h1>
+                <hr class="mt-4">
+            </div>
+        </div>
+    </div>
+
+    <section class="product-slider py-5">
+
+        <div class="container">
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331.png" class="img-fluid">
+
+                        <div class="product-info">
+                            <a href="./whiteonion.html"><p>White Onion flakes</p></a>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (1).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <a href="./redonion.html"><p>Red Onion flakes and powder</p></a>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (2).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Organic Onion powder</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (3).png" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Yellow onion flakes and powder</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (5).jpg" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Garlic clove</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (6).jpg" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Garlic chopped</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (7).jpg" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Garlic Granules </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide product-card">
+
+                        <img src="./img/Rectangle 34624331 (8).jpg" class="img-fluid">
+
+                        <div class="product-info">
+                            <p>Garlic powder</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===best selling products end=== -->
+
+    <!-- ===footer strat === -->
+ <footer>
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo-bg">
+                    <img src="./img/logo.png" alt="Logo" width="120">
+                </div>
+                <h6 class="footer-heading">About DHV Industries</h6>
+                <p class="small text-white roboto" style="line-height: 1.6;">
+                    The vision of growth has been tall since DHV Industries Pvt. Ltd. The organization proclaimed it with their sprightly transaction in import and export. Established in the heart of Gujarat.
+                </p>
+            </div>
+
+           <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Our Product</h6>
+                <ul class="footer-links">
+                    <li><a href="./product.html">Oil Seeds</a></li>
+                    <li><a href="./product2.html">Indian Spices</a></li>
+                    <li><a href="./product.html">Grains and Pulses</a></li>
+                    <li><a href="./product.html">Dehydrated Products</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="#">Certificate</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Brochure</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 text-center text-md-start">
+                <h6 class="footer-heading">Location</h6>
+                <iframe src="https://www.google.com/maps?q=Berlin&output=embed"  alt="Location Map" class="map-img"></iframe>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-heading">Contacts Us</h6>
+                
+                <div class="contact-item">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p><strong>Phone</strong></p>
+                        <p>+91 99794 17549</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-text">
+                        <p><strong>Address</strong></p>
+                        <p>Ahmedabad Gujarat India,382350</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text">
+                        <p><strong>Email</strong></p>
+                        <p>info@globientstar.in</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            <div>
+                © 2025 © 2025 © Copyright DHV Brother's
+            </div>
+            <div>
+                <a href="#">Privacy Policy</a> | <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- ===footer end=== -->
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            speed: 3000,
+
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            },
+
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 }
+            }
+
+        });
+
+    </script>
+
+     <script>
+        function loginUser() {
+            let email = document.getElementById("email").value;
+
+            if (email === "") {
+                alert("Please enter email");
+            } else {
+                alert("Login Successful ✅");
+
+                let modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                modal.hide();
+            }
+        }
+    </script>
+</body>
+
+</html>
